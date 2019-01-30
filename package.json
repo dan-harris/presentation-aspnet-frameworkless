@@ -12,7 +12,8 @@
     "lint": "eslint --ext .js,.jsx .",
     "start": "cross-env NODE_ENV=development node server.js",
     "patch:spectacle-code-slide": "patch-package spectacle-code-slide",
-    "postinstall": "patch-package"
+    "postinstall": "patch-package",
+    "commit": "git-cz"
   },
   "author": "Formidable Labs <hello@formidable.com> (https://formidable.com)",
   "contributors": [
@@ -71,7 +72,7 @@
     "rimraf": "^2.6.2",
     "style-loader": "^0.23.0",
     "surge": "latest",
-    "uglifyjs-webpack-plugin": "^2.0.1",
+    "uglifyjs-webpack-plugin": "^2.1.1",
     "url-loader": "^1.1.1",
     "webpack": "4.20.2",
     "webpack-cli": "^3.1.2",
