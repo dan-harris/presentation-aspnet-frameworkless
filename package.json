@@ -43,6 +43,8 @@
     "@babel/preset-env": "^7.1.0",
     "@babel/preset-react": "^7.0.0",
     "@babel/register": "^7.0.0",
+    "@emotion/core": "^10.0.6",
+    "@emotion/styled": "^10.0.6",
     "@webpack-cli/migrate": "^0.1.2",
     "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.4",

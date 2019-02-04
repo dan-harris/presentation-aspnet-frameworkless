@@ -11,20 +11,19 @@ pre {
 }
 
 code {
-  background-color: rgba(0, 0, 0, 0.15);
+  /* background-color: rgba(0, 0, 0, 0.15); */
+  background-color: #504779;
   padding: 1.5rem;
-  font-family: "FuraCode Nerd Font Mono", "Fira Code", Consolas, Monaco,
-    "Andale Mono", "Ubuntu Mono", monospace !important;
+  font-family: 'FuraCode Nerd Font Mono', 'Fira Code', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace !important;
 }
 
-:not(pre) > code[class*="language-"],
-code[class*="language-"],
-pre[class*="language-"] {
+:not(pre) > code[class*='language-'],
+code[class*='language-'],
+pre[class*='language-'] {
   color: white;
   background: none;
   text-shadow: 0 -0.1em 0.2em black;
-  font-family: "FuraCode Nerd Font Mono", "Fira Code", Consolas, Monaco,
-    "Andale Mono", "Ubuntu Mono", monospace;
+  font-family: 'FuraCode Nerd Font Mono', 'Fira Code', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   font-size: 1.5rem;
   line-height: 2rem;
   text-align: left;
@@ -45,19 +44,19 @@ pre[class*="language-"] {
 }
 
 @media print {
-  code[class*="language-"],
-  pre[class*="language-"] {
+  code[class*='language-'],
+  pre[class*='language-'] {
     text-shadow: none;
   }
 }
 
-pre[class*="language-"],
-:not(pre) > code[class*="language-"] {
+pre[class*='language-'],
+:not(pre) > code[class*='language-'] {
   background: hsl(30, 20%, 25%);
 }
 
 /* Code blocks */
-pre[class*="language-"] {
+pre[class*='language-'] {
   padding: 1em;
   margin: 0.5em 0;
   overflow: auto;
@@ -67,7 +66,7 @@ pre[class*="language-"] {
 }
 
 /* Inline code */
-:not(pre) > code[class*="language-"] {
+:not(pre) > code[class*='language-'] {
   padding: 0.15em 0.2em 0.05em;
   border-radius: 0.3em;
   border: 0.13em solid hsl(30, 20%, 40%);

@@ -1,9 +1,8 @@
 import React from 'react';
-import { Code, Heading, Slide, Text } from 'spectacle';
-import { images } from '../images';
+import { Code, Heading, Text } from 'spectacle';
 
-export const TextSlideAlt = () => (
-  <Slide transition={['fade']} bgColor="backgroundDefault" bgColor="backgroundDefault" bgImage={images.genericBGDefault} bgSize="auto">
+export const TextSlideContent = () => (
+  <>
     <Heading size={1}>heading 1</Heading>
     <Heading size={2}>heading 2</Heading>
     <Heading size={3}>heading 3</Heading>
@@ -13,5 +12,5 @@ export const TextSlideAlt = () => (
       Paragraph text lorem ipsum dolem sum do whatsy kung fu gangnam style. <Code>const foo = bar; () => something;</Code> Twinkies blue
       warehouse fund chocobos.
     </Text>
-  </Slide>
+  </>
 );

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Deck, Image, Slide } from 'spectacle';
+import { Deck, Slide } from 'spectacle';
 import CodeSlide from 'spectacle-code-slide';
 import preloader from 'spectacle/lib/utils/preloader';
 import { images } from './images';
@@ -8,8 +8,10 @@ import './styles/prism-theme.css';
 import { createCustomTheme } from './styles/theme-custom';
 import { ImageSlide } from './templates/image-slide';
 import { ListSlide } from './templates/list-slide';
+import { ProfileLinksSlideContent } from './templates/profile-links-slide-content';
+import { ProfileSlideContent } from './templates/profile-slide-content';
 import { QuoteSlide } from './templates/quote-slide';
-import { TextSlideAlt } from './templates/text-slide-alt';
+import { TextSlideContent } from './templates/text-slide-content';
 import { TitleSlide } from './templates/title-slide';
 
 /**
@@ -19,7 +21,9 @@ const customTheme = createCustomTheme();
 
 preloader(images);
 
-// require CSS
+/**
+ * reset CSS
+ */
 require('normalize.css');
 
 export default class Presentation extends React.Component {
@@ -27,10 +31,24 @@ export default class Presentation extends React.Component {
     return (
       <Deck transition={['fade', 'slide']} transitionDuration={500} progress="pacman" controls={false} theme={customTheme}>
         <TitleSlide />
-        <Slide bgColor="secondary">
-          <Image src={images.formidagon} width={800} />
+        <Slide transition={['fade']} bgColor="backgroundDefault" bgImage={images.genericBGDefault} bgSize="auto">
+          <ProfileSlideContent />
         </Slide>
-        <TextSlideAlt />
+        <Slide
+          transition={['fade']}
+          textColor="textAlternate"
+          bgColor="backgroundAlternate"
+          bgImage={images.genericBGAlternate}
+          bgSize="auto"
+        >
+          <ProfileLinksSlideContent />
+        </Slide>
+        <Slide bgColor="backgroundDefault" bgImage={images.genericBGDefault} bgSize="auto">
+          <TextSlideContent />
+        </Slide>
+        <Slide bgColor="backgroundAlternate" textColor="textAlternate" bgImage={images.genericBGAlternate} bgSize="auto">
+          <TextSlideContent />
+        </Slide>
         <ListSlide />
         <QuoteSlide />
         <ImageSlide />
@@ -38,6 +56,8 @@ export default class Presentation extends React.Component {
           transition={[]}
           lang="js"
           bgColor="backgroundDefault"
+          bgImage={images.genericBGDefault}
+          bgSize="auto"
           code={require('raw-loader!../assets/home-page.ts.example')} // eslint-disable-line
           ranges={[
             { loc: [0, 52], title: 'Walking through some code' },
@@ -52,6 +72,8 @@ export default class Presentation extends React.Component {
           transition={[]}
           lang="js"
           bgColor="backgroundDefault"
+          bgImage={images.genericBGDefault}
+          bgSize="auto"
           code={require('raw-loader!../assets/index.cshtml.cs.example')} // eslint-disable-line
           ranges={[{ loc: [0, 52], title: 'Walking through some code' }, { loc: [14, 26] }, { loc: [26, 33] }]}
         />
