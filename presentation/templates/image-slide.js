@@ -4,7 +4,7 @@ import { images } from '../images';
 
 export const ImageSlide = () => (
   <Slide>
-    <Image src={images.goodWork} width={500} />
+    <Image src={images.questSwords} width={500} />
     <Notes>gifs work too</Notes>
   </Slide>
 );

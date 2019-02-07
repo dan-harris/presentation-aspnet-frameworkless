@@ -3,16 +3,15 @@ import { Deck, Slide } from 'spectacle';
 import CodeSlide from 'spectacle-code-slide';
 import preloader from 'spectacle/lib/utils/preloader';
 import { images } from './images';
+import { ArchitecturePatternsSlideContent, ArchitecturePatternsSlideNotes } from './slides/architecture-patterns-slide-content';
+import { ClientServerRangeSlideContent, ClientServerRangeSlideNotes } from './slides/client-server-range-slide-content';
+import { IveBeenThinkingSlideContent, IveBeenThinkingSlideNotes } from './slides/ive-been-thinking-slide-content';
+import { TitleSlideContent } from './slides/title-slide-content';
 import './styles/globals.css';
 import './styles/prism-theme.css';
 import { createCustomTheme } from './styles/theme-custom';
-import { ImageSlide } from './templates/image-slide';
-import { ListSlide } from './templates/list-slide';
 import { ProfileLinksSlideContent } from './templates/profile-links-slide-content';
 import { ProfileSlideContent } from './templates/profile-slide-content';
-import { QuoteSlide } from './templates/quote-slide';
-import { TextSlideContent } from './templates/text-slide-content';
-import { TitleSlide } from './templates/title-slide';
 
 /**
  * create custom theme
@@ -30,7 +29,9 @@ export default class Presentation extends React.Component {
   render() {
     return (
       <Deck transition={['fade', 'slide']} transitionDuration={500} progress="pacman" controls={false} theme={customTheme}>
-        <TitleSlide />
+        <Slide bgColor="backgroundAlternate" textColor="textAlternate" bgImage={images.genericBGAlternate} bgSize="auto">
+          <TitleSlideContent />
+        </Slide>
         <Slide transition={['fade']} bgColor="backgroundDefault" bgImage={images.genericBGDefault} bgSize="auto">
           <ProfileSlideContent />
         </Slide>
@@ -43,22 +44,34 @@ export default class Presentation extends React.Component {
         >
           <ProfileLinksSlideContent />
         </Slide>
-        <Slide bgColor="backgroundDefault" bgImage={images.genericBGDefault} bgSize="auto">
-          <TextSlideContent />
+        <Slide bgColor="backgroundDefault" bgImage={images.genericBGDefault} bgSize="auto" notes={IveBeenThinkingSlideNotes}>
+          <IveBeenThinkingSlideContent />
         </Slide>
-        <Slide bgColor="backgroundAlternate" textColor="textAlternate" bgImage={images.genericBGAlternate} bgSize="auto">
-          <TextSlideContent />
+        <Slide
+          bgColor="backgroundAlternate"
+          textColor="textAlternate"
+          bgImage={images.genericBGAlternate}
+          bgSize="auto"
+          notes={ClientServerRangeSlideNotes}
+        >
+          <ClientServerRangeSlideContent />
         </Slide>
-        <ListSlide />
-        <QuoteSlide />
-        <ImageSlide />
+        <Slide
+          bgColor="backgroundAlternate"
+          textColor="textAlternate"
+          bgImage={images.genericBGAlternate}
+          bgSize="auto"
+          notes={ArchitecturePatternsSlideNotes}
+        >
+          <ArchitecturePatternsSlideContent />
+        </Slide>
         <CodeSlide
           transition={[]}
           lang="js"
           bgColor="backgroundDefault"
           bgImage={images.genericBGDefault}
           bgSize="auto"
-          code={require('raw-loader!../assets/home-page.ts.example')} // eslint-disable-line
+          code={require('raw-loader!../assets/code-examples/home-page.ts.example')} // eslint-disable-line
           ranges={[
             { loc: [0, 52], title: 'Walking through some code' },
             { loc: [0, 2], title: 'The Beginning' },
@@ -74,7 +87,7 @@ export default class Presentation extends React.Component {
           bgColor="backgroundDefault"
           bgImage={images.genericBGDefault}
           bgSize="auto"
-          code={require('raw-loader!../assets/index.cshtml.cs.example')} // eslint-disable-line
+          code={require('raw-loader!../assets/code-examples/index.cshtml.cs.example')} // eslint-disable-line
           ranges={[{ loc: [0, 52], title: 'Walking through some code' }, { loc: [14, 26] }, { loc: [26, 33] }]}
         />
       </Deck>
