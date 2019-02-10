@@ -5,8 +5,14 @@ import preloader from 'spectacle/lib/utils/preloader';
 import { images } from './images';
 import { ArchitecturePatternsSlideContent, ArchitecturePatternsSlideNotes } from './slides/architecture-patterns-slide-content';
 import { ClientServerRangeSlideContent, ClientServerRangeSlideNotes } from './slides/client-server-range-slide-content';
+import { CreatedAPizzaShopSlideContent, CreatedAPizzaShopSlideNotes } from './slides/created-a-pizza-shop-slide-content';
+import { HowToCombineInOneArchSlideContent, HowToCombineInOneArchSlideNotes } from './slides/how-to-combine-in-one-arch-slide-content';
 import { IveBeenThinkingSlideContent, IveBeenThinkingSlideNotes } from './slides/ive-been-thinking-slide-content';
+import { LetsDiscussStaticSlideContent, LetsDiscussStaticSlideNotes } from './slides/lets-discuss-static-slide-content';
+import { StaticArchReminderSlideContent, StaticArchReminderSlideNotes } from './slides/static-arch-reminder-slide-content';
 import { TitleSlideContent } from './slides/title-slide-content';
+import { WhyRazorPagesSlideContent, WhyRazorPagesSlideNotes } from './slides/why-razor-pages-slide-content';
+import { WhyTypescriptSlideContent, WhyTypescriptSlideNotes } from './slides/why-typescript-slide-content';
 import './styles/globals.css';
 import './styles/prism-theme.css';
 import { createCustomTheme } from './styles/theme-custom';
@@ -32,16 +38,10 @@ export default class Presentation extends React.Component {
         <Slide bgColor="backgroundAlternate" textColor="textAlternate" bgImage={images.genericBGAlternate} bgSize="auto">
           <TitleSlideContent />
         </Slide>
-        <Slide transition={['fade']} bgColor="backgroundDefault" bgImage={images.genericBGDefault} bgSize="auto">
+        <Slide bgColor="backgroundDefault" bgImage={images.genericBGDefault} bgSize="auto">
           <ProfileSlideContent />
         </Slide>
-        <Slide
-          transition={['fade']}
-          textColor="textAlternate"
-          bgColor="backgroundAlternate"
-          bgImage={images.genericBGAlternate}
-          bgSize="auto"
-        >
+        <Slide textColor="textAlternate" bgColor="backgroundAlternate" bgImage={images.genericBGAlternate} bgSize="auto">
           <ProfileLinksSlideContent />
         </Slide>
         <Slide bgColor="backgroundDefault" bgImage={images.genericBGDefault} bgSize="auto" notes={IveBeenThinkingSlideNotes}>
@@ -65,31 +65,79 @@ export default class Presentation extends React.Component {
         >
           <ArchitecturePatternsSlideContent />
         </Slide>
+        <Slide
+          bgColor="backgroundAlternate"
+          textColor="textAlternate"
+          bgImage={images.genericBGAlternate}
+          bgSize="auto"
+          align="flex-start flex-start"
+          className="fullwidth"
+          notes={HowToCombineInOneArchSlideNotes}
+        >
+          <HowToCombineInOneArchSlideContent />
+        </Slide>
+        <Slide bgColor="backgroundDefault" bgImage={images.genericBGDefault} bgSize="auto" notes={LetsDiscussStaticSlideNotes}>
+          <LetsDiscussStaticSlideContent />
+        </Slide>
         <CodeSlide
           transition={[]}
           lang="js"
           bgColor="backgroundDefault"
           bgImage={images.genericBGDefault}
           bgSize="auto"
-          code={require('raw-loader!../assets/code-examples/home-page.ts.example')} // eslint-disable-line
+          code={require('raw-loader!../assets/code-examples/jquery-static.js.example')} // eslint-disable-line
           ranges={[
-            { loc: [0, 52], title: 'Walking through some code' },
-            { loc: [0, 2], title: 'The Beginning' },
-            { loc: [1, 20] },
-            { loc: [10, 11], note: 'Heres a note!' },
-            { loc: [8, 10], image: images.goodWork },
-            { loc: [21, 25] }
+            { loc: [0, 37], title: 'jquery 👉 native' },
+            { loc: [1, 5] },
+            { loc: [6, 10] },
+            { loc: [1, 10] },
+            { loc: [12, 16] },
+            { loc: [17, 21] },
+            { loc: [12, 21] },
+            { loc: [23, 29] },
+            { loc: [31, 36] },
+            { loc: [23, 36] },
+            { loc: [0, 37], title: 'but at the end of the day... 🤷‍♀️' }
           ]}
         />
-        <CodeSlide
-          transition={[]}
-          lang="js"
-          bgColor="backgroundDefault"
-          bgImage={images.genericBGDefault}
+        <Slide
+          bgColor="backgroundAlternate"
+          textColor="textAlternate"
+          bgImage={images.genericBGAlternate}
           bgSize="auto"
-          code={require('raw-loader!../assets/code-examples/index.cshtml.cs.example')} // eslint-disable-line
-          ranges={[{ loc: [0, 52], title: 'Walking through some code' }, { loc: [14, 26] }, { loc: [26, 33] }]}
-        />
+          align="flex-start flex-start"
+          className="fullwidth"
+          notes={WhyTypescriptSlideNotes}
+        >
+          <WhyTypescriptSlideContent />
+        </Slide>
+        <Slide
+          bgColor="backgroundAlternate"
+          textColor="textAlternate"
+          bgImage={images.genericBGAlternate}
+          bgSize="auto"
+          notes={WhyRazorPagesSlideNotes}
+        >
+          <WhyRazorPagesSlideContent />
+        </Slide>
+        <Slide
+          bgColor="backgroundAlternate"
+          textColor="textAlternate"
+          bgImage={images.genericBGAlternate}
+          bgSize="auto"
+          notes={StaticArchReminderSlideNotes}
+        >
+          <StaticArchReminderSlideContent />
+        </Slide>
+        <Slide
+          bgColor="backgroundAlternate"
+          textColor="textAlternate"
+          bgImage={images.genericBGAlternate}
+          bgSize="auto"
+          notes={CreatedAPizzaShopSlideNotes}
+        >
+          <CreatedAPizzaShopSlideContent />
+        </Slide>
       </Deck>
       // <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
       // <div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>

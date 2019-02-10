@@ -1,5 +1,5 @@
 import React from 'react';
-import { Appear, Heading } from 'spectacle';
+import { Heading } from 'spectacle';
 import { HeadingImage } from '../components/heading-image';
 import { icons } from '../icons';
 
@@ -9,9 +9,9 @@ export const IveBeenThinkingSlideContent = () => (
       i've been thinking...&nbsp;
       <HeadingImage src={icons.thinkingFace} />
     </Heading>
-    <Appear>
-      <Heading size={5}>... are single-page-apps really the answer to every problem?</Heading>
-    </Appear>
+    {/* <Appear>
+      <Heading size={5}>... are single-page-apps really the answer?</Heading>
+    </Appear> */}
   </>
 );
 

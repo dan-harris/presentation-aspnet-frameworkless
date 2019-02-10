@@ -24,5 +24,8 @@ export const createGlobals = (colors = {}, fonts = {}) => ({
   },
   '*': {
     boxSizing: 'border-box'
+  },
+  '.fullwidth': {
+    maxWidth: '100% !important'
   }
 });
