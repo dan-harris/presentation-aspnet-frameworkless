@@ -4,5 +4,8 @@ export const icons = {
   partyPopper: require('../assets/icons/party-popper.png'),
   knife: require('../assets/icons/knife.png'),
   lightBulb: require('../assets/icons/light-bulb.png'),
-  pizza: require('../assets/icons/pizza.png')
+  pizza: require('../assets/icons/pizza.png'),
+  iceCream: require('../assets/icons/ice-cream.png'),
+  highVoltage: require('../assets/icons/high-voltage.png'),
+  fire: require('../assets/icons/fire.png')
 };

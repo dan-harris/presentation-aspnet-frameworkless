@@ -113,7 +113,7 @@ export const ArchitecturePatternsSlideNotes = (
     <h3>Sprinkles</h3>
     <ul>
       <li>small component-based interactivity</li>
-      <li />
+      <li>slightly more encapsulated than static</li>
       <li>slight distinction to SPA</li>
     </ul>
     <h3>Static</h3>

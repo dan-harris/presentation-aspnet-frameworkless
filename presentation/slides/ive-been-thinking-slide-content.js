@@ -9,9 +9,6 @@ export const IveBeenThinkingSlideContent = () => (
       i've been thinking...&nbsp;
       <HeadingImage src={icons.thinkingFace} />
     </Heading>
-    {/* <Appear>
-      <Heading size={5}>... are single-page-apps really the answer?</Heading>
-    </Appear> */}
   </>
 );
 

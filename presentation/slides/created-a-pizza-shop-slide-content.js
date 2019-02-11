@@ -19,7 +19,7 @@ export const CreatedAPizzaShopSlideContent = () => (
       &nbsp;so... i created a pizza shop
     </Heading>
     <LargeImage src={images.danPizza} />
-    <Text style={{ marginTop: '3rem', fontWeight: '700', opacity: '0.3' }}>photoshop skillz by josh ( @huntoce )</Text>
+    <Text style={{ marginTop: '3rem', fontWeight: '700', opacity: '0.5', fontSize: '1.5rem' }}>photoshop skillz by josh ( @huntoce )</Text>
   </>
 );
 

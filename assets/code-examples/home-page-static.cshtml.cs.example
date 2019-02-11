@@ -1,22 +1,22 @@
+
 public class IndexModel : PageModel {
 
-    /// <summary>
+    /// 
     /// current order based on customer id (if we have it)
-    /// </summary>
-    /// <value></value>
+    /// 
     public PizzaGhostPizzeria.Models.Order Order { get; set; }
 
-    /// <summary>
+    /// 
     /// state object for client initial state
     /// (let's us preload client side with modifiable state)
-    /// </summary>
-    public JObject InitialState = new JObject ();
+    ///
+    public JObject InitialState = new JObject();
 
     private readonly OrderService _orderService;
 
     private readonly IdentityService _identityService;
 
-    public IndexModel (
+    public IndexModel(
         OrderService orderService, 
         IdentityService identityService
     ) {
@@ -24,11 +24,11 @@ public class IndexModel : PageModel {
         _identityService = identityService;
     }
 
-    public async Task OnGetAsync () {
+    public async Task OnGetAsync() {
         // populate data
         Order = await _orderService
-            .GetOrderByCustomerId (_identityService.CustomerId);
+            .GetOrderByCustomerId(_identityService.CustomerId);
         // set initial state
-        InitialState["order"] = JObject.FromObject (Order);
+        InitialState["order"] = JObject.FromObject(Order);
     }
 }
