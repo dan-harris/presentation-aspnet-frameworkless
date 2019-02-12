@@ -137,25 +137,32 @@ export const ClientServerRangeSlideContent = () => (
 
 export const ClientServerRangeSlideNotes = (
   <>
-    <h3>Client</h3>
+    <h3>about the scale</h3>
+    <ul>
+      <li>started thinking about scale of rendering</li>
+      <li>technically sliding scale... can ssr spa</li>
+      <li>explain csr / ssr</li>
+    </ul>
+    <h3>client</h3>
     <ul>
       <li>fully client driven</li>
       <li>traditional SPA...</li>
       <li>things like PWA, mobile</li>
+      <li>explain csr</li>
     </ul>
-    <h3>Mini SPA / Mini-app</h3>
+    <h3>mini SPA / Mini-app</h3>
     <ul>
       <li>similar to SPA, but smaller in scope</li>
       <li>page skeleton + (outer) routing controlled elsewhere</li>
       <li>slight distinction to SPA</li>
     </ul>
-    <h3>Web Components</h3>
+    <h3>web Components</h3>
     <ul>
       <li>again, slight step down from mini-app</li>
       <li>generally different scope, as can compose multiple components (e.g. SPA)</li>
       <li>slight distinction to SPA</li>
     </ul>
-    <h3>Light interaction</h3>
+    <h3>light interaction</h3>
     <ul>
       <li>Direct DOM manipulation</li>
       <li>event listeners .etc</li>
@@ -163,7 +170,7 @@ export const ClientServerRangeSlideNotes = (
       <li>side note - jQuery API was so good, that browser native has them... no need for jQuery most of the time</li>
       <li>ideally hardly any scope & just presentational</li>
     </ul>
-    <h3>Server</h3>
+    <h3>server</h3>
     <ul>
       <li>server render</li>
       <li>aspnet, tada</li>

@@ -20,5 +20,11 @@ export const LitElementSlideNotes = (
       <li> emphasize this is a base web element (native browser)</li>
       <li> set attributes, receive events</li>
     </ul>
+    <h3>show web component 👉</h3>
+    <ul>
+      <li>show shadomroot + dom</li>
+      <li>devtools</li>
+      <li>show lit element + attribute</li>
+    </ul>
   </>
 );

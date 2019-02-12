@@ -12,5 +12,6 @@ export const images = {
   archMiniApp: require('../assets/slide-images/arch-mini-app.svg'),
   archSprinkles: require('../assets/slide-images/arch-sprinkles.svg'),
   archStatic: require('../assets/slide-images/arch-static.svg'),
+  razorTSArch: require('../assets/slide-images/razor-ts-arch.svg'),
   danPizza: require('../assets/slide-images/dan-pizza.jpg')
 };

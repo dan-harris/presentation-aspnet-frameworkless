@@ -99,24 +99,30 @@ export const ArchitecturePatternsSlideContent = () => (
 
 export const ArchitecturePatternsSlideNotes = (
   <>
-    <h3>App</h3>
+    <h3>explain</h3>
+    <ul>
+      <li>how can we start describing this range of rendering/interaction in repeatable arch</li>
+      <li>helps for consistency</li>
+      <li>also is answering our use case questions</li>
+    </ul>
+    <h3>app</h3>
     <ul>
       <li>Highly interactive client, may use its own routing</li>
       <li>Because page skeleton is static, can pre-render this for even better TTR/TTI</li>
       <li>Still not intended to be incredibly deep</li>
     </ul>
-    <h3>Mini-app</h3>
+    <h3>mini-app</h3>
     <ul>
       <li>Very similar to App, but just smaller in scope.</li>
       <li>Usually a pointed interaction that requires hgih-interactability (e.g. a map)</li>
     </ul>
-    <h3>Sprinkles</h3>
+    <h3>sprinkles</h3>
     <ul>
       <li>small component-based interactivity</li>
       <li>slightly more encapsulated than static</li>
       <li>slight distinction to SPA</li>
     </ul>
-    <h3>Static</h3>
+    <h3>static</h3>
     <ul>
       <li>Direct DOM manipulation</li>
       <li>event listeners .etc</li>

@@ -45,8 +45,11 @@ export const HowToCombineInOneArchSlideContent = () => (
 
 export const HowToCombineInOneArchSlideNotes = (
   <>
+    <h3>one pattern to bind them</h3>
     <ul>
-      <li> ASPNET & Typescript </li>
+      <li> maybe needs a sauron emoji??</li>
+      <li> aspnet & typescript </li>
+      <li> how do we implement this? whats our patterns? glad you asked</li>
     </ul>
   </>
 );
