@@ -7,5 +7,8 @@ export const icons = {
   pizza: require('../assets/icons/pizza.png'),
   iceCream: require('../assets/icons/ice-cream.png'),
   highVoltage: require('../assets/icons/high-voltage.png'),
-  fire: require('../assets/icons/fire.png')
+  fire: require('../assets/icons/fire.png'),
+  construction: require('../assets/icons/construction.png'),
+  screamFace: require('../assets/icons/scream-face.png'),
+  hammer: require('../assets/icons/hammer.png')
 };

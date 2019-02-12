@@ -3,6 +3,8 @@ import { Deck, Slide } from 'spectacle';
 import CodeSlide from 'spectacle-code-slide';
 import preloader from 'spectacle/lib/utils/preloader';
 import { images } from './images';
+import { AddComplexitySlideContent, AddComplexitySlideNotes } from './slides/add-complexity-slide-content';
+import { AppMiniAppReminderSlideContent, AppMiniAppReminderSlideNotes } from './slides/app-mini-app-arch-reminder-slide-content';
 import { ArchitecturePatternsSlideContent, ArchitecturePatternsSlideNotes } from './slides/architecture-patterns-slide-content';
 import { ClientServerRangeSlideContent, ClientServerRangeSlideNotes } from './slides/client-server-range-slide-content';
 import { ConnectingThePowerSlideContent, ConnectingThePowerSlideNotes } from './slides/connecting-the-power-slide-content';
@@ -266,6 +268,41 @@ export default class Presentation extends React.Component {
             { loc: [0, 0], title: 'typescript page class 🤖' } // eslint-disable-line quotes
           ]}
         />
+        <Slide bgColor="backgroundDefault" bgImage={images.genericBGDefault} bgSize="auto" notes={AddComplexitySlideNotes}>
+          <AddComplexitySlideContent />
+        </Slide>
+        <Slide
+          bgColor="backgroundAlternate"
+          textColor="textAlternate"
+          bgImage={images.genericBGAlternate}
+          bgSize="auto"
+          notes={AppMiniAppReminderSlideNotes}
+        >
+          <AppMiniAppReminderSlideContent />
+        </Slide>
+        <CodeSlide
+          lang="js"
+          bgColor="backgroundDefault"
+          bgImage={images.genericBGDefault}
+          bgSize="auto"
+          code={require('raw-loader!../assets/code-examples/order-cart-mini-app.ts.example')} // eslint-disable-line
+          ranges={[
+            { loc: [0, 0], title: 'lit element mini app 🔥' },
+            { loc: [1, 3] },
+            { loc: [39, 54] },
+            { loc: [16, 30] },
+            { loc: [0, 0], title: 'lit element mini app 🔥' } // eslint-disable-line quotes
+          ]}
+        />
+        <Slide
+          bgColor="backgroundAlternate"
+          textColor="textAlternate"
+          bgImage={images.genericBGAlternate}
+          bgSize="auto"
+          notes={ArchitecturePatternsSlideNotes}
+        >
+          <ArchitecturePatternsSlideContent />
+        </Slide>
         <Slide bgColor="backgroundDefault" bgImage={images.genericBGDefault} bgSize="auto">
           <FrontendDevADLSlideContent />
         </Slide>
