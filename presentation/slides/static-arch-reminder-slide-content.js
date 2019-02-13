@@ -60,10 +60,10 @@ export const StaticArchReminderSlideContent = () => (
 
 export const StaticArchReminderSlideNotes = (
   <>
-    <h3>Static Reminder</h3>
+    <h3>static reminder</h3>
     <ul>
-      <li> quick reminder of the architecture we're looking at now</li>
-      <li>Direct DOM manipulation</li>
+      <li>quick reminder of the architecture we're looking at now</li>
+      <li>direct DOM manipulation</li>
       <li>event listeners .etc</li>
       <li>ideally hardly any scope & just presentational</li>
     </ul>

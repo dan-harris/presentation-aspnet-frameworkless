@@ -24,6 +24,7 @@ export const TitleSlideNotes = (
     <ul>
       <li> welcome all</li>
       <li> firstly, thanks for coming and listening to me</li>
+      <li>interactive - shout out if you want to voice opinion... heckle...whatever</li>
       <li> this is my quest towards a perfect frontend architecture</li>
     </ul>
   </>

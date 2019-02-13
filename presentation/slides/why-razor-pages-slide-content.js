@@ -17,6 +17,7 @@ export const WhyRazorPagesSlideContent = () => (
 
 export const WhyRazorPagesSlideNotes = (
   <>
+    <h3>aspnet razor pages basics</h3>
     <ul>
       <li> simplified way of returning views</li>
       <li> essentially wrapper around MVC</li>

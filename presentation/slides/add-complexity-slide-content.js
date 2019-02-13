@@ -14,6 +14,7 @@ export const AddComplexitySlideContent = () => (
 
 export const AddComplexitySlideNotes = (
   <>
+    <h3>mini-app / app</h3>
     <ul>
       <li> have a good platform for orchestrating components </li>
       <li> lets make the components more complex....</li>

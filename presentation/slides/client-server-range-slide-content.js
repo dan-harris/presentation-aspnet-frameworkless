@@ -142,6 +142,7 @@ export const ClientServerRangeSlideNotes = (
       <li>started thinking about scale of rendering</li>
       <li>technically sliding scale... can ssr spa</li>
       <li>explain csr / ssr</li>
+      <li>state management</li>
     </ul>
     <h3>client</h3>
     <ul>

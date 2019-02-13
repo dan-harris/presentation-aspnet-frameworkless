@@ -44,5 +44,9 @@ export const ConnectingThePowerSlideNotes = (
       <li> jsut one missing piece... easily propagating state between components</li>
       <li> created simple data bind (state object)</li>
     </ul>
+    <h3>demo web component events 👉</h3>
+    <ul>
+      <li>listen for event</li>
+    </ul>
   </>
 );

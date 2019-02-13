@@ -1,6 +1,6 @@
 {
-  "name": "presentation-starter",
-  "version": "1.0.1",
+  "name": "presentation-aspnet-frameworkless",
+  "version": "1.2.1",
   "description": "danharris.io spectacle presentation boilerplate",
   "main": "lib/index.js",
   "scripts": {
