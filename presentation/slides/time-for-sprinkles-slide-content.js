@@ -19,7 +19,12 @@ export const TimeForSprinklesSlideNotes = (
       <li> when we want to start componentisizing UI elements / small encapsulated interactions </li>
       <li> web components!! </li>
       <li> link back to mini / arch </li>
-      <li> show example order page </li>
+    </ul>
+    <h3>demo order page 👉</h3>
+    <ul>
+      <li>highlight order cards as components</li>
+      <li>interrelated state</li>
+      <li>show shadow dom again?</li>
     </ul>
   </>
 );

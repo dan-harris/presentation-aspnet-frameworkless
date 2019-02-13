@@ -25,9 +25,20 @@ export const CreatedAPizzaShopSlideContent = () => (
 
 export const CreatedAPizzaShopSlideNotes = (
   <>
+    <h3>so how do we meet a static arch?</h3>
     <ul>
       <li> simple combine the two!! </li>
+    </ul>
+    <h3>pizza shop</h3>
+    <ul>
+      <li> i needed a demo... </li>
+      <li>so i created a pizza shop</li>
+      <li>that'sa me cooking pizza</li>
+    </ul>
+    <h3>demo 👉</h3>
+    <ul>
       <li> show demo app homepage as example </li>
+      <li>highlight small interaction</li>
       <li> tie back to static / light interaction archs </li>
     </ul>
   </>

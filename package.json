@@ -1,6 +1,6 @@
 {
-  "name": "presentation-starter",
-  "version": "1.0.1",
+  "name": "presentation-aspnet-frameworkless",
+  "version": "1.2.1",
   "description": "danharris.io spectacle presentation boilerplate",
   "main": "lib/index.js",
   "scripts": {
@@ -11,6 +11,8 @@
     "export": "spectacle-renderer --delay 3000",
     "lint": "eslint --ext .js,.jsx .",
     "start": "cross-env NODE_ENV=development node server.js",
+    "patch": "patch:spectacle && patch:spectacle-code-slide",
+    "patch:spectacle": "patch-package spectacle",
     "patch:spectacle-code-slide": "patch-package spectacle-code-slide",
     "postinstall": "patch-package",
     "commit": "git-cz"

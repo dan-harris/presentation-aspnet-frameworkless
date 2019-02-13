@@ -45,11 +45,15 @@ export const WhyTypescriptSlideContent = () => (
 
 export const WhyTypescriptSlideNotes = (
   <>
+    <h3>overview</h3>
     <ul>
       <li> brief overview </li>
       <li> again... types!! </li>
       <li> syntactically similar to c# </li>
       <li> IDE + tooling is well supported </li>
+    </ul>
+    <h3>typing</h3>
+    <ul>
       <li> handles some of the compile options + providing things like decorators </li>
       <li> only a compile time type-check </li>
       <li> ... so don't expect the kind of static typing from something like c# </li>

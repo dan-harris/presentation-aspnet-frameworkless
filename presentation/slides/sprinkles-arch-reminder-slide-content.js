@@ -65,6 +65,7 @@ export const SprinklesArchReminderSlideNotes = (
       <li>small component-based interactivity</li>
       <li>slightly more encapsulated than static</li>
       <li>slight distinction to SPA</li>
+      <li>honestly, biggest jump is from jquery style light interaction to this</li>
     </ul>
   </>
 );
